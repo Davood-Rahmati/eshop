@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+  <a href="{% url 'delete' user.id %} " class="btn btn-danger">Delete</a>
+  <a href="{% url 'update' user.id %} " class="btn btn-info">Update</a>
+  <h3>{{user.full_name}}</h3>
+  <small>{{ user.mobile}}</small><hr/>
+  <p>{{ user.date_of_birth}}</p>
+  <h3>{{user.national_cod}}}</h3>
+  <h3>{{user.email}}</h3>
+  <h3>{{user.sheba_bank}}</h3>
+  <h3>user.address_1</h3>
+  <h3>user.address_2</h3>
+  <h3>user.address_3</h3>
+  <h3>message</h3>
+
+
+{% endblock %}

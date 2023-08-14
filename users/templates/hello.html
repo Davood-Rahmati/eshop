@@ -1,0 +1,14 @@
+    {% extend 'base.html' '%}
+
+
+    {% block content%}
+
+
+
+
+    {% if name == 'admin' %}
+        <p>Sorry ...</p>
+        <h3>Hello {{ name | upper }} ...</h3>
+    {% endif %}
+
+    {% endblock %}
